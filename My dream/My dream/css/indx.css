@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-flex-column{
+    flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.text-alingn-center{
+    text-align: center;
+}
+
+/*start nav*/
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #060047;
+    position: fixed;
+}
+
+nav ul{
+    height: 100%;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: red;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    background-color: #E5D1FA;
+    padding: 21px 20px;
+    text-decoration: underline solid black;
+}
+
+.btn{
+    display: none;
+    font-size: 25px;
+    color: red;
+}
+
+@media(max-width:391px){
+    nav a{
+        display: none;
+        height: 100%;
+    }
+    .btn{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/*end nav*/
+
+/*start header*/
+
+header{
+    width: 100%;
+    height: 380px;
+    background-color: #B3005E;
+}
+
+header h1{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-family: 'Alkatra', cursive;
+}
+
+header p{
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header button{
+    padding: 5px 20px;
+    text-transform: uppercase;
+    color: #FF5F9E;
+    background-color: #362FD9;
+    border-radius: 5px;
+}
+
+header button:hover{
+    background-color: #4d313c;
+}
+
+@media(max-width:699px){
+    header .container{
+        align-items: flex-start;
+    }
+}
+
+/*end header*/
+
+/*start dreams*/
+
+.dream{
+    width: 100%;
+    height: auto;
+}
+
+.dream h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #645CBB;
+}
+
+.dreams{
+    height: auto;
+    padding-top: 15px;
+}
+
+
+.dreams h4 ,.dreams p{
+    background-color: #FFF2CC;
+}
+
+.dreams h4{
+    text-transform: uppercase;
+    color: #362FD9;
+}
+
+.dreams p{
+    text-transform: capitalize;
+}
+
+.dreams i{
+    font-size: 50px;
+    padding-bottom: 20px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media(max-width:1130px){
+    .dreams .container{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
+
+/*end dream*/
+
+/* start hobby*/
+
+.hobby{
+    width: 100%;
+    height: auto;
+    background-color: #57C5B6;
+}
+
+.hobby .container{
+    flex-wrap: wrap;
+}
+
+.hobbies{
+    width: 40%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.hobbies-img img{
+    width: 100%;
+}
+
+.hobbies-text h5,.hobbies-text p{
+    border-radius: 5px;
+    background-color: #159895;
+}
+
+.hobbies-text h5{
+    text-transform: uppercase;
+    color: #A5D7E8;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.hobbies-text p{
+    text-transform: capitalize;
+    color: #FEFF86;
+}
+
+@media(max-width:1320px){
+    .hobby .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+}
+
+/* end hoppy*/
+
+/*start content*/
+
+.content{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/Arsenal.jpg);
+    background-size: cover;
+}
+
+.content-text input{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.content-massage input{
+    padding: 50px 100px;
+}
+
+.content-massage .submit{
+    padding: 0px;
+}
+
+/*end content*/
+
+
+.support{
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/logo.gif);
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
